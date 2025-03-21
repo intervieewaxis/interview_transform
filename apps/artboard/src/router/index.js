@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.router = exports.routes = void 0;
+const jsx_runtime_1 = require("react/jsx-runtime");
+const react_router_1 = require("react-router");
+const artboard_1 = require("../pages/artboard");
+const builder_1 = require("../pages/builder");
+const preview_1 = require("../pages/preview");
+const providers_1 = require("../providers");
+exports.routes = (0, react_router_1.createRoutesFromChildren)((0, jsx_runtime_1.jsx)(react_router_1.Route, { element: (0, jsx_runtime_1.jsx)(providers_1.Providers, {}), hydrateFallbackElement: (0, jsx_runtime_1.jsx)("div", { children: "Loading..." }), children: (0, jsx_runtime_1.jsxs)(react_router_1.Route, { path: "artboard", element: (0, jsx_runtime_1.jsx)(artboard_1.ArtboardPage, {}), children: [(0, jsx_runtime_1.jsx)(react_router_1.Route, { path: "builder", element: (0, jsx_runtime_1.jsx)(builder_1.BuilderLayout, {}) }), (0, jsx_runtime_1.jsx)(react_router_1.Route, { path: "preview", element: (0, jsx_runtime_1.jsx)(preview_1.PreviewLayout, {}) })] }) }));
+exports.router = (0, react_router_1.createBrowserRouter)(exports.routes);
