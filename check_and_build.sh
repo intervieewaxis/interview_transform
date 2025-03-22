@@ -5,7 +5,7 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # Configuration
 readonly REPO_DIR="/home/transform.interviewaxis.com"  # Path to your local repository
-readonly GITHUB_REPO="https://github.com/jbarachadi/transform.interviewaxis.com"  # GitHub repository URL
+readonly GITHUB_REPO="https://github.com/intervieewaxis/interview_transform.git"  # GitHub repository URL
 readonly BRANCH="main"  # Branch to check for changes
 readonly LOG_DIR="/home/transform.interviewaxis.com/logs"  # Directory to store logs
 readonly MAX_LOG_SIZE=$((1024 * 1024 * 1024))  # 1GB in bytes
